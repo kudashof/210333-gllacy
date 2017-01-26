@@ -212,14 +212,26 @@
     </form>
   </section>
   <div class="map">
+<!--   тут будет карта-->
+   
+<!--   -->
+<!--   контактное инфо-->
     <div class="contact">
       <p>Адрес главного офиса и офлайн магазина:</p>
       <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
       <p>Для заказов по телефону:</p>
       <b>8 812 450-25-25</b>
       <p>(с 10 до 20 ежедневно)</p>
+<!--      Форма обратной связи-->
       <div class="red-btn">
-        <button class="btn">Форма обратной связи</button>
+        <button class="btn" open-feetback-form>Форма обратной связи</button>
+        <div class="feedback-form">
+          <form action="#" method="post">
+            <input type="text" name="feedback" placeholder="Как вас зовут?" required="">
+            <label class="hidden"><span>Как вас зовут?</span></label>
+            <button class="red-btn send-feedback-btn">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
