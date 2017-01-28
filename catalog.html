@@ -14,9 +14,7 @@
       <nav class="main-navigation">
         <ul>
           <li>
-            <div class="nav-checked-status">
-              <a href="#catalog">Каталог</a>
-            </div>
+            <a href="#catalog">Каталог</a>
             <ul class="sub-menu">
               <li><a href="#1">Новинки</a></li>
               <li><a href="#2">Сливочное</a></li>
@@ -96,7 +94,8 @@
                 </table>
                 <div class="separator"></div>
                 <span class="order-form-total">Итого: 750 руб.</span>
-                <button class="red-btn order-form-btn">Оформить заказ</button>
+                < class="red-btn order-form-btn">Оформить заказ
+                  </>
               </div>
 
             </div>
@@ -113,9 +112,9 @@
   </header>
   <nav class="nav-catalog">
     <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Сливочное</a></li>
+      <li><a>Главная</a></li>
+      <li><a>Каталог</a></li>
+      <li><a>Сливочное</a></li>
     </ul>
   </nav>
   <!--  Сортировка-->
@@ -123,45 +122,40 @@
     <form action="#" method="post">
       <ul>
         <li>
-          <label for="sort">Сортировка
-            <select name="sort" id="sort">
-              <option value="popular">по популярности</option>
-              <option value="sort">...</option>
-            </select>
-          </label>
+          <legend>Сортировка:</legend>
+          <select name="sort" id="sort">
+            <option value="popular">по популярности</option>
+            <option value="sort">...</option>
+          </select>
           <label for="sort-price">Цена: 100 руб. – 500 руб.
             <input id="sort-price" class="range1" type="range" min="100" max="500" step="1" value="100">
             <input class="range2" type="range" min="100" max="500" step="1" value="400">
           </label>
           <fieldset class="fatness-filter-checkbox">
             <legend>Жирность:</legend>
-            <div class="fatnes-sort-conteiner">
-              <input name="fatness" type="radio" value="0" id="fat-0">
-              <label for="fat-0">0%</label>
-              <input name="fatness" type="radio" value="10" id="fat-10" checked>
-              <label for="fat-10">до 10%</label>
-              <input name="fatness" type="radio" value="30" id="fat-30">
-              <label for="fat-30">до 30%</label>
-              <input name="fatness" type="radio" value="more 30" id="fat-more-30">
-              <label for="fat-more-30">выше 30%</label>
-            </div>
+            <input name="fatness" type="radio" value="0" id="fat-0">
+            <label for="fat-0">0%</label>
+            <input name="fatness" type="radio" value="10" id="fat-10" checked>
+            <label for="fat-10">до 10%</label>
+            <input name="fatness" type="radio" value="30" id="fat-30">
+            <label for="fat-30">до 30%</label>
+            <input name="fatness" type="radio" value="more 30" id="fat-more-30">
+            <label for="fat-more-30">выше 30%</label>
           </fieldset>
         </li>
         <li>
           <fieldset>
             <legend>Наполнители</legend>
-            <div class="filler">
-              <input type="checkbox" name="shocolad" id="shocolad">
-              <label for="shocolad">шоколадные</label>
-              <input type="checkbox" name="sugar" id="sugar">
-              <label for="sugar">сахарные присыпки</label>
-              <input type="checkbox" name="fruit" id="fruit">
-              <label for="fruit">фрукты</label>
-              <input type="checkbox" name="syrup" id="syrup">
-              <label for="syrup">сиропы</label>
-              <input type="checkbox" name="jam" id="jam">
-              <label for="jam">джемы</label>
-            </div>
+            <input type="checkbox" name="shocolad" id="shocolad">
+            <label for="shocolad">шоколадные</label>
+            <input type="checkbox" name="sugar" id="sugar">
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="fruit" id="fruit">
+            <label for="fruit">фрукты</label>
+            <input type="checkbox" name="syrup" id="syrup">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" name="jam" id="jam">
+            <label for="jam">джемы</label>
           </fieldset>
           <button type="submit" class="use-filters">Применить</button>
         </li>
@@ -177,6 +171,7 @@
             <img src="#" alt="img-icecream" width="#" height="#">
             <span class="ice-item-price">310&#8381;    /кг</span>
             <span class="ice-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            <a class="red-btn">Быстрый просмотр</a>
           </section>
         </li>
         <li>
@@ -184,7 +179,7 @@
             <img src="#" alt="img-icecream" width="#" height="#">
             <span class="ice-item-price">380&#8381;    /кг</span>
             <span class="ice-item-name">Сливочно-кофейное с кусочками шоколада</span>
-            <button class="red-btn">Быстрый просмотр</button>
+            <a class="red-btn">Быстрый просмотр</a>
           </section>
         </li>
         <li>
@@ -192,7 +187,7 @@
             <img src="#" alt="img-icecream" width="#" height="#">
             <span class="ice-item-price">355&#8381;    /кг</span>
             <span class="ice-item-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
-            <button class="red-btn">Быстрый просмотр</button>
+            <a class="red-btn">Быстрый просмотр</a>
           </section>
         </li>
         <li>
@@ -200,7 +195,7 @@
             <img src="#" alt="img-icecream" width="#" height="#">
             <span class="ice-item-price">415&#8381;    /кг</span>
             <span class="ice-item-name">Сливочное крем-брюле с карамельной подливкой</span>
-            <button class="red-btn">Быстрый просмотр</button>
+            <a class="red-btn">Быстрый просмотр</a>
           </section>
         </li>
       </ul>
@@ -276,13 +271,15 @@
   </div>
   <!--  Пагинатор-->
   <div class="paginator">
-    <a class="prev disabled" href="#prev">Назад</a>
-    <a class="current" href="#1">1</a>
-    <a href="#2">2</a>
-    <a href="#3">3</a>
-    <a href="#4">4</a>
-    <a href="#5">5</a>
-    <a class="next" href="#next">Вперёд</a>
+    <ul>
+      <li><a class="prev disabled" href="#prev">Назад</a></li>
+      <li><a class="current" href="#1">1</a></li>
+      <li><a href="#2">2</a></li>
+      <li><a href="#3">3</a></li>
+      <li><a href="#4">4</a></li>
+      <li><a href="#5">5</a></li>
+      <li><a class="next" href="#next">Вперёд</a></li>
+    </ul>
   </div>
   <!--  футер-->
   <footer class="main-footer">
@@ -305,7 +302,7 @@
         </div>
       </section>
       <section class="footer-copyright">
-        <img src="#" alt="logo htmlacademy">
+        <a href="#"><img src="#" alt="logo htmlacademy"></a>
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy © 2017</a></p>
       </section>
     </div>

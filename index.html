@@ -59,9 +59,7 @@
               <form action="#" method="post">
                 <input type="email" name="email" placeholder="Электронная почта">
                 <input type="password" name="password" placeholder="Пароль">
-                <div class="red-btn">
-                  <input class="login website" type="button" name="button" value="Войти">
-                </div>
+                  <input class="login website red-btn" type="button" name="button" value="Войти">
               </form>
               <div class="forgot-check">
                 <a href="#">Забыли пароль?</a>
@@ -118,20 +116,18 @@
       <h2>Малинка даром</h2>
       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
       </p>
-      <div class="red-btn">
-        <a href="#">Хочу варенье!</a>
-      </div>
+        <a href="#" class="red-btn">Хочу варенье!</a>
     </article>
     <article class="chocolate-share">
       <h2>Шоколадки даром</h2>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <div class="red-btn">
-        <a href="#">Хочу шоколадки!</a>
-      </div>
+        <a href="#" class="red-btn">Хочу шоколадки!</a>
     </article>
   </section>
   <!--  Хиты продаж-->
+
+  <!-- v1
   <div class="content-hitsales">
     <div class="hit-ring">
       <ul>
@@ -178,12 +174,50 @@
       <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
     </div>
   </div>
+-->
+  <!-- v2-->
+  <article>
+      <ul class="col1">
+        <li>
+          <section class="ice-item hit-sales">
+            <img src="#" alt="img-icecream" width="#" height="#">
+            <span class="ice-item-price">310&#8381;    /кг</span>
+            <span class="ice-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            <a class="red-btn">Быстрый просмотр</a>
+          </section>
+        </li>
+        <li>
+          <section class="ice-item hit-sales">
+            <img src="#" alt="img-icecream" width="#" height="#">
+            <span class="ice-item-price">380&#8381;    /кг</span>
+            <span class="ice-item-name">Сливочно-кофейное с кусочками шоколада</span>
+            <a class="red-btn">Быстрый просмотр</a>
+          </section>
+        </li>
+        <li>
+          <section class="ice-item hit-sales">
+            <img src="#" alt="img-icecream" width="#" height="#">
+            <span class="ice-item-price">355&#8381;    /кг</span>
+            <span class="ice-item-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
+            <a class="red-btn">Быстрый просмотр</a>
+          </section>
+        </li>
+        <li>
+          <section class="ice-item hit-sales">
+            <img src="#" alt="img-icecream" width="#" height="#">
+            <span class="ice-item-price">415&#8381;    /кг</span>
+            <span class="ice-item-name">Сливочное крем-брюле с карамельной подливкой</span>
+            <a class="red-btn">Быстрый просмотр</a>
+          </section>
+        </li>
+      </ul>
+  </article>
+
+
   <section class="features">
     <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-    <div class="features-item">
-      <img src="#" alt="значек особенности">
-      <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-    </div>
+    <img src="#" alt="значек особенности">
+    <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
     <div class="features-item">
       <img src="#" alt="значек особенности">
       <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -206,30 +240,28 @@
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     <form class="subscribe-form" action="#" method="post">
       <input type="email" id="user-email" name="user-email" required placeholder="Электронная почта">
-      <div class="red-btn">
-        <button class="btn" type="submit">Отправить</button>
-      </div>
+      <button class="btn red-btn" type="submit">Отправить</button>
     </form>
   </section>
   <div class="map">
-<!--   тут будет карта-->
-   
-<!--   -->
-<!--   контактное инфо-->
+    <!--   тут будет карта-->
+
+    <!--   -->
+    <!--   контактное инфо-->
     <div class="contact">
       <p>Адрес главного офиса и офлайн магазина:</p>
       <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
       <p>Для заказов по телефону:</p>
       <b>8 812 450-25-25</b>
       <p>(с 10 до 20 ежедневно)</p>
-<!--      Форма обратной связи-->
+      <!--      Форма обратной связи-->
       <div class="red-btn">
-        <button class="btn" open-feetback-form>Форма обратной связи</button>
+        <a class="btn" open-feetback-form>Форма обратной связи</a>
         <div class="feedback-form">
           <form action="#" method="post">
             <input type="text" name="feedback" placeholder="Как вас зовут?" required="">
-            <label class="hidden"><span>Как вас зовут?</span></label>
-            <button class="red-btn send-feedback-btn">Отправить</button>
+            <label class="hidden">Как вас зовут?</label>
+            <button type="submit" class="red-btn send-feedback-btn">Отправить</button>
           </form>
         </div>
       </div>
