@@ -1,0 +1,53 @@
+body {
+   font-family: "Roboto", "sans-serif", "serif";
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+h2 {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.slide11 {
+  background-image: url(../img/icecream-1.1.png);
+}
+
+.slide12 {
+  background-image: url(../img/icecream-1.2.png);
+}
+
+.slide21 {
+  background-image: url(../img/icecream-2.1.png);
+}
+
+.slide22 {
+  background-image: url(../img/icecream-2.2.png);
+}
+
+.slide31 {
+  background-image: url(../img/icecream-3.1.png);
+}
+
+.slide32 {
+  background-image: url(../img/icecream-3.2.png);
+}
+
+.raspberry-share {
+  background-image: url(../img/bg-raspberry.jpg)
+}
+
+.chocolate-share {
+  background-image: url(../img/bg-chocolate.jpg)
+}
