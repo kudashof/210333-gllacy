@@ -27,7 +27,7 @@
           <nav class="main-navigation">
             <ul class="navigation">
               <li>
-                <a href="#catalog">Каталог</a>
+                <a href="catalog.html">Каталог</a>
                 <ul class="sub-menu">
                   <li><a href="#1">Новинки</a></li>
                   <li><a href="#2">Сливочное</a></li>
@@ -51,9 +51,11 @@
 
             <div class="search">
               <a class="search-btn" href="#"></a>
-              <form class="search-form hide-search-form" action="#" method="post" name="search">
-                <input type="search" name="search" placeholder="Что ищем?">
-              </form>
+              <div class="search-form hide-search-form">
+                <form action="#" method="post" name="search">
+                  <input type="search" name="search" placeholder="Что ищем?">
+                </form>
+              </div>
             </div>
 
             <!--          Кнопка входа и форма авторизации-->
@@ -180,69 +182,74 @@
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         <!--        </div>-->
       </section>
-<div class="block-news-subscribe">
-      <section class="news-blog">
-        <!--    <img src="#" alt="фон контейнера">-->
-        <!--   фон уберу в css-->
-        <p>Новое в нашем блоге</p>
-        <h3><a href="#">10  способов сервировки фруктовых щербетов к столу</a></h3>
-      </section>
+      <div class="block-news-subscribe">
+        <section class="news-blog">
+          <!--    <img src="#" alt="фон контейнера">-->
+          <!--   фон уберу в css-->
+          <p>Новое в нашем блоге</p>
+          <h3><a href="#">10  способов сервировки фруктовых щербетов к столу</a></h3>
+        </section>
 
-      <section class="subscribe">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form class="subscribe-form" action="#" method="post">
-          <input type="email" id="user-email" name="user-email" required placeholder="Электронная почта">
-          <button class="btn slide-btn" type="submit">Отправить</button>
-        </form>
-      </section>
+        <section class="subscribe">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form class="subscribe-form" action="#" method="post">
+            <input type="email" id="user-email" name="user-email" required placeholder="Электронная почта">
+            <button class="btn slide-btn" type="submit">Отправить</button>
+          </form>
+        </section>
       </div>
     </div>
-    <div class="map">
+    <div class="map-wrapper">
+      <div class="map">
 
-      <!--   тут будет карта-->
 
-      <!--   -->
-      <!--   контактное инфо-->
-      <div class="map-contact">
-        <p>Адрес главного офиса и офлайн магазина:</p>
-        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-        <p>Для заказов по телефону:</p>
-        <b>8 812 450-25-25</b>
-        <p>(с 10 до 20 ежедневно)</p>
-        <!--      Форма обратной связи-->
-        <div class="feedback-form">
-          <a class="btn" open-feetback-form>Форма обратной связи</a>
+        <!--   тут будет карта-->
+
+        <!--   -->
+        <!--   контактное инфо-->
+        <div class="map-contact">
+          <p>Адрес главного офиса и офлайн магазина:</p>
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          <p>Для заказов по телефону:</p>
+          <b>8 812 450-25-25</b>
+          <p>(с 10 до 20 ежедневно)</p>
+          <!--      Форма обратной связи-->
           <div class="feedback-form">
-            <form action="#" method="post">
-              <input type="text" name="feedback" placeholder="Как вас зовут?" required>
-              <label class="hidden">Как вас зовут?</label>
-              <button type="submit" class="slide-btn send-feedback-btn">Отправить</button>
-            </form>
+            <a class="btn" open-feetback-form>Форма обратной связи</a>
+            <div class="feedback-form">
+              <form action="#" method="post">
+                <input type="text" name="feedback" placeholder="Как вас зовут?" required>
+                <label class="hidden">Как вас зовут?</label>
+                <button type="submit" class="slide-btn send-feedback-btn">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <footer class="main-footer">
-      <div class="container">
+      <div class="footer-container">
+
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#"><img src="#" alt="Твиттер"></a>
-          <a class="social-btn social-btn-inst" href="#"><img src="#" alt="Инстаграм"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="#" alt="Фейсбук"></a>
-          <a class="social-btn social-btn-vk" href="#"><img src="#" alt="Вконтакте"></a>
+          <a class="social-btn social-btn-tw" href="#" alt="Твиттер"></a>
+          <a class="social-btn social-btn-inst" href="#" alt="Инстаграм"></a>
+          <a class="social-btn social-btn-fb" href="#" alt="Фейсбук"></a>
+          <a class="social-btn social-btn-vk" href="#" alt="Вконтакте"></a>
         </section>
+
         <section class="footer-info">
-          <img src="#" alt="heart">
           <div class="footer-info-column1">
             <a href="#">Для поставщиков</a>
-            <a href="#">О производстве</a>
+            <a href="#">Наши документы</a>
           </div>
           <div class="footer-info-column2">
-            <a href="#">Наши документы</a>
+            <a href="#">О производстве</a>
             <a href="#">Экологические стандарты</a>
           </div>
         </section>
+
         <section class="footer-copyright">
-          <img src="#" alt="logo htmlacademy">
+          <a href="https://htmlacademy.ru"><img src="../img/htmlAcademy-footer.png" width="108px" height="38px" alt="logo-htmlacademy"></a>
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy © 2017</a></p>
         </section>
       </div>
