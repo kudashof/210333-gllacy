@@ -140,17 +140,17 @@ h2 {
   cursor: pointer;
 }
 
-#btn-1:checked ~ .site-wrapper {
+#btn-1:checked ~ .slider {
   background-color: #849d8f;
   background-image: url("../img/icecream-1.png");
 }
 
-#btn-2:checked ~ .site-wrapper {
+#btn-2:checked ~ .slider {
   background-color: #8996a6;
   background-image: url("../img/icecream-2.png");
 }
 
-#btn-3:checked ~ .site-wrapper {
+#btn-3:checked ~ .slider {
   background-color: #9d8b84;
   background-image: url("../img/icecream-3.png");
 }
@@ -166,7 +166,6 @@ h2 {
 #btn-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
-
 
 /*слайдер*/
 
@@ -224,15 +223,30 @@ h2 {
 }
 
 .work-time {
+  padding: 0;
+  margin: 0;
   outline: 1px dotted red;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+}
+.work-time p {
+  /* Style for "С 10 до 20" */
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+}
+.work-time p:nth-child(2) {
+/* Style for "8 812 450-" */
+font-size: 22px;
+font-weight: 700;
+line-height: 24px;
 }
 
 .content-profitable {
   outline: 1px dotted red;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 41px;
 }
 
@@ -256,13 +270,10 @@ h2 {
 .wrapper-ice-item {
   outline: 1px dotted red;
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.col-ice-item {
-  outline: 1px dotted red;
-  display: flex;
-  justify-content: center;
-}
 
 .ice-item {
   outline: 1px dotted red;
@@ -425,19 +436,13 @@ h2 {
 }
 
 .main-footer {
-  outline: 1px dotted red;
+  outline: 5px dotted red;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 103px;
-}
-
-.footer-container {
-  outline: 1px dotted red;
-  display: flex;
+/*  justify-content: center;*/
   justify-content: space-between;
   align-items: center;
-  flex-basis: 1200px;
+  min-height: 103px;
+  width: 100%
 }
 
 .footer-social {
@@ -660,17 +665,7 @@ h2 {
   background-position: 0 -52px;
 }
 
-/*
-.basket:hover .user-block-btn::before {
-  background-position: 0 -52px;
-}
-*/
 
-.line2 {
-  outline: inherit;
-  display: flex;
-  justify-content: space-between;
-}
 
 .breadcrumbs {}
 
@@ -678,7 +673,7 @@ h2 {
   display: flex;
 }
 
-.filter-row1 {
+.filter-row-top {
   outline: 1px dotted red;
   display: flex;
   justify-content: flex-start;
@@ -698,7 +693,7 @@ h2 {
   line-height: 41px;
 }
 
-.filter-row2 {
+.filter-row-bottom {
   outline: 1px dotted red;
   display: flex;
   justify-content: flex-start;
