@@ -866,9 +866,7 @@ line-height: 30px;
 
 .main-footer {
   outline: 5px dotted red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
   min-height: 103px;
   width: 100%;
 
@@ -879,13 +877,22 @@ line-height: 30px;
   outline: 1px dotted red;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-/*  flex-basis: 185px;*/
+    margin-left: 30px;
 }
 
 .footer-info {
   outline: 1px dotted red;
   display: flex;
+  position: relative;
+  margin-left: 64px;
+}
+.footer-info a {
+color: #ffffff;
+font-size: 13px;
+font-weight: 400;
+line-height: 18px;
+  text-decoration: underline;
+  margin-left: 3px;
 }
 
 .footer-info-column1 {
@@ -902,11 +909,11 @@ line-height: 30px;
 }
 
 .footer-info-column1::before {
-  content: "";
+  content: "❤";
   width: 15px;
   height: 13px;
   position: absolute;
-  top: 3px;
+  top: 0px;
   left: -20px;
 }
 
@@ -961,17 +968,20 @@ line-height: 30px;
 
 .social-btn {
   display: flex;
-  width: 32px;
-  height: 32px;
- 
-  border-radius: 50%;
-  padding: auto;
-  box-sizing: border-box;
-  text-align: center;
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
+    margin-left: 3px;
+    vertical-align: top;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(255,255,255,.6), inset 0 0 0 1px rgba(255,255,255,0.6);
+    opacity: 0.8;
 }
 
 .social-btn-tw {
-  width: 150px;
+background-position: -278px -157px;
 }
 
 .common-buttons-form-basket {
@@ -1153,4 +1163,28 @@ font-weight: 700;
 line-height: 24px;
   
   margin-left: 7px;
+}
+
+.social-btn-inst {
+  background-position: -236px -157px;
+}
+
+.social-btn-fb {
+  background-position: -194px -157px;
+}
+
+.social-btn-vk {
+  background-position: -320px -157px;
+}
+
+.footer-wrapper {
+  outline: 1px dotted red;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
