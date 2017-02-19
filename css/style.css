@@ -128,7 +128,7 @@ h1 {
   position: absolute;
   bottom: 22px;
   left: 27px;
-  z-index: 20;
+/*  z-index: 20;*/
   font-size: 0;
 }
 
@@ -356,7 +356,7 @@ height: 44px;
   height: 32px;
   width: 261px;
   margin: 22px 0 0 345px;
-  z-index: 100;
+/*  z-index: 100;*/
 }
 
 .user-block-btn {
@@ -405,7 +405,7 @@ height: 44px;
 }
 
 .search-form {
-  display: none;
+ 
   width: 341px;
   height: 84px;
   text-align: center;
@@ -416,6 +416,12 @@ height: 44px;
   position: absolute;
   top: 70px;
   right: 150px;
+   display: none;
+}
+
+.search:hover .search-form {
+  display: block;
+/*    z-index: 500;*/
 }
 
 .search-form input {
@@ -425,7 +431,6 @@ height: 44px;
   border: 1px solid #d3d3d2;
   background-color: #ffffff;
   color: #999999;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -436,9 +441,7 @@ height: 44px;
   padding-left: 10px;
 }
 
-.search:hover .search-form {
-  display: block;
-}
+
 
 .login-form {
   display: none;
@@ -454,6 +457,7 @@ height: 44px;
 
 .login:hover .login-form {
   display: block;
+
 }
 
 .login {
@@ -489,7 +493,7 @@ height: 44px;
   position: relative;
   width: 117px;
   margin-right: 0;
-  padding: 8px 34px 9px 45px;
+  padding: 8px 0px 9px 42px;
 }
 
 .basket::before {
@@ -502,6 +506,17 @@ height: 44px;
   width: 21px;
   height: 20px;
   background-position: -239px -5px;
+}
+.basket-catalog::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  width: 21px;
+    height: 20px;
+    background-position: -239px -35px;
 }
 
 .basket:hover::before {
@@ -529,7 +544,7 @@ height: 44px;
   padding: 0;
   background-color: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .6);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
 
@@ -761,9 +776,15 @@ height: 44px;
   margin: 0 0px 17px 18px;
   min-height: 332px;
   width: 277px;
-  z-index: 10;
+  z-index: 50;
   margin-bottom: 17px;
 }
+.ice-item img {
+  position: relative;
+  z-index: 12;
+  
+}
+
 
 .ice-item-hit::before {
   content: "";
@@ -775,13 +796,16 @@ height: 44px;
   background-position: -123px -97px;
   top: 0;
   left: 6px;
+  z-index: 15;
 }
+
 
 .ice-item-price {
   position: absolute;
   top: 204px;
   left: 3px;
   font-size: 45px;
+  z-index: 13;
 }
 
 .ice-item-name {
@@ -830,7 +854,7 @@ height: 44px;
 .kg {
   font-size: 30px;
 }
-ice-item:hover {
+.ice-item:hover {
   z-index: 11;
 }
 
@@ -1005,7 +1029,7 @@ ice-item:hover {
   /* Style for "Подложка" */
 position: absolute;
 top: 0;
-right: 250px;
+right: 350px;
 width: 317px;
 height: 276px;
 border-radius: 10px;
@@ -1569,8 +1593,43 @@ font-size: 18px;
 font-weight: 700;
 line-height: 24px;
 }
+/*
+.open-feedback-form:hover .feedback-form{
+  display: block;
+}
+*/
+
 
 .feedback-form-wrapper {
   position: relative;
+  padding-top: 10px;
   
+}
+.feedback-form-wrapper input {
+  margin: 0 25px 10px 25px;
+width: 267px;
+height: 44px;
+border-radius: 4px;
+border: 1px solid rgba(178, 178, 178, 0.52);
+background-color: #ffffff;
+  
+
+color: #999999;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.feedback-form-wrapper label {
+  
+margin-left: 39px;
+color: #5b9ddf;
+font-size: 11px;
+font-weight: 400;
+line-height: 13px;
+ visibility: hidden;
+}
+
+.feedback-form-wrapper input:active .feedback-form-wrapper label {
+visibility: visible;
 }
