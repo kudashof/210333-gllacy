@@ -17,7 +17,7 @@
 
 
       <div class="header-container">
-        <a href="index.html"><img src="../gllacy/img/logo.png" alt="Лого" width="154" height="64"></a>
+        <a href="index.html"><img src="../img/logo.png" alt="Лого" width="154" height="64"></a>
         <!--          Странная фигня творится с картинками. Они то включаются то выключаются и приходится то прописывать то убирать префикс ../gllacy -->
         <nav class="main-navigation">
           <ul class="main-menu">
@@ -299,23 +299,40 @@
         </section>
       </article>
       <!--  Пагинатор-->
-      <div class="paginator">
 
-        <a class="prev disabled" href="#prev">Назад</a>
-        <a class="current" href="#1">1</a>
-        <a href="#2">2</a>
-        <a href="#3">3</a>
-        <a href="#4">4</a>
-        <a href="#5">5</a>
-        <a class="next" href="#next">Вперед</a>
+    <div class="pagination-wrapper">
+          <ul class="pagnition clearfix">
+            <li>&lsaquo;</li>
+            <li class="pagnition-active">
+              1
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
+              <a class="pagnition-nav" href="#">&rsaquo;</a>
+            </li>
+          </ul>
+          </div>
 
-      </div>
+      
+    <!--  Пагинатор-->
+    
 
     </main>
 
     <!--  футер-->
-    <footer class="main-footer">
-      <div class="footer-wrapper">
+    <footer class="main-footer ">
+      <div class="footer-wrapper footer-catalog">
 
 
         <section class="footer-social">
@@ -338,7 +355,7 @@
         </section>
 
         <section class="footer-copyright">
-          <a href="https://htmlacademy.ru"><img src="../gllacy/img/htmlAcademy-footer.png" width="108px" height="38px" alt="logo-htmlacademy"></a>
+          <a href="https://htmlacademy.ru"><img src="../img/htmlAcademy-footer.png" width="108px" height="38px" alt="logo-htmlacademy"></a>
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy © 2017</a></p>
         </section>
       </div>
